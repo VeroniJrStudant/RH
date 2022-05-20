@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj": {}
+  },
+  "projects": {
+    "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj",
+        "projectName": "autenticacao",
+        "projectPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj",
+        "packagesPath": "/home/veroni/.nuget/packages/",
+        "outputPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/veroni/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
