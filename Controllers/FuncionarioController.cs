@@ -1,5 +1,10 @@
+using System.Security.Authentication;
+using System.Security.AccessControl;
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using autenticacao.Repositorys;
+using autenticacao.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace autenticacao.Controllers
 {
@@ -14,5 +19,17 @@ namespace autenticacao.Controllers
       var lista = FuncionarioRepository.ListarFuncionario();
       return Ok(lista);
     }
+
+    [HttpPost]
+    [Route("cadastrar-novo-funcionario")]
+    [Authorize]
+    public IActionResult InserirColaborador([FromBody] Funcionario cadastrar)
+    {
+      FuncionarioRepository.Adicionar(cadastrar);
+      return Created("", cadastrar);
+    }
+
+    [HttpPut]
+    [Route("")]
   }
 }

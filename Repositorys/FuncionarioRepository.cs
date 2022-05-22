@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using autenticacao.Models;
@@ -23,10 +24,18 @@ namespace autenticacao.Repositorys
       return colaboradores.Where(x => x.Nome.ToLower() == username.ToLower() && x.Senha == password)
       .FirstOrDefault();
     }
+
+    public static void Adicionar(Funcionario funcionario)
+    {
+      colaboradores.Add(funcionario);
+    }
+
     public static List<Funcionario> ListarFuncionario()
     {
       return colaboradores;
     }
+
+
 
   }
 
