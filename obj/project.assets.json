@@ -6721,11 +6721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj",
+      "projectUniqueName": "/home/veroni/Documentos/senai-softplan/m3-semana-1/exercicios-semana03-C-/autenticacao.csproj",
       "projectName": "autenticacao",
-      "projectPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj",
+      "projectPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/exercicios-semana03-C-/autenticacao.csproj",
       "packagesPath": "/home/veroni/.nuget/packages/",
-      "outputPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/obj/",
+      "outputPath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/exercicios-semana03-C-/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/veroni/.nuget/NuGet/NuGet.Config"

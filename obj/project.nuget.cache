@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/7xVhxU7uJSJTCwZzU8vphMDnqF01XQaa1uqs1ZOli/BOVdJEWGreC86ERDn8zrGNhMvj+higM/bS8sK8PEzJQ==",
+  "dgSpecHash": "H8Mr8Rx0WTG2YM1nG8Wn5n1/5FpHI/WSVFOLCpNonYiIDJZE4MefDH7xZ1YXlYevEcnoxyQ7pfY4FPriqXzUlw==",
   "success": true,
-  "projectFilePath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/Exerc-cios-trello-c--s3/autenticacao/autenticacao.csproj",
+  "projectFilePath": "/home/veroni/Documentos/senai-softplan/m3-semana-1/exercicios-semana03-C-/autenticacao.csproj",
   "expectedPackageFiles": [
     "/home/veroni/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/home/veroni/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

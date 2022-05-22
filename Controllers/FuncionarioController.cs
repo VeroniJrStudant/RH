@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Security.Authentication;
 using System.Security.AccessControl;
 using System.Net;
@@ -29,7 +30,29 @@ namespace autenticacao.Controllers
       return Created("", cadastrar);
     }
 
+    [HttpDelete]
+    [Route("excluir-funcionario")]
+    [Authorize]
+    public IActionResult ExcluirFuncionario()
+    {
+
+    }
+
+    [HttpDelete]
+    [Route("excluir-gerente")]
+    [Authorize]
+    public IActionResult ExcluirGerente()
+    {
+
+    }
+
+
     [HttpPut]
-    [Route("")]
+    [Route("alterar-salario")]
+    [Authorize]
+    public IActionResult AlterarSalario([FromBody] Funcionario modificar)
+    {
+
+    }
   }
 }
