@@ -1,6 +1,6 @@
-namespace autenticacao.DTOs
+namespace Models
 {
-  public class LoginDTO
+  public class User
   {
     public string Username { get; set; }
     public string Password { get; set; }

@@ -1,14 +1,17 @@
-using System;
+using System.Runtime.InteropServices.ComTypes;
+using System.Globalization;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using autenticacao.Models;
+using autenticacao.Enums;
 
 namespace autenticacao.Repositorys
 {
 
   public static class FuncionarioRepository
   {
-    private static List<Funcionario> colaboradores = new List<Funcionario>()
+    private static readonly List<Funcionario> colaboradores = new List<Funcionario>()
     {
         new Funcionario
         {
@@ -19,23 +22,49 @@ namespace autenticacao.Repositorys
             Permissao = Enums.Permissoes.Administrador
         }
     };
-    public static Funcionario VerificarUsuarioESenha(string username, string password)
-    {
-      return colaboradores.Where(x => x.Nome.ToLower() == username.ToLower() && x.Senha == password)
-      .FirstOrDefault();
-    }
+    private static int _id = 1;
 
-    public static void Adicionar(Funcionario funcionario)
-    {
-      colaboradores.Add(funcionario);
-    }
-
-    public static List<Funcionario> ListarFuncionario()
+    public static List<Funcionario> Obter()
     {
       return colaboradores;
     }
 
+    public static Funcionario ObterPorUsuarioESenha(string username, string password)
+    {
+      return colaboradores.FirstOrDefault(x => x.Nome.ToLower() == username.ToLower() && x.Senha == password);
+    }
 
+    public static void Adicionar(string nome, string senha, decimal Salario, Permissoes permissao)
+    {
+      colaboradores.Add(new Funcionario
+      {
+        Id = _id++,
+        Nome = nome,
+        Senha = senha,
+        Salario = Salario,
+        Permissao = permissao
+      });
+    }
+
+    public static void Adicionar(Funcionario geradorDeId)
+    {
+      geradorDeId.Id = _id++;
+      colaboradores.Add(geradorDeId);
+    }
+
+    public static void Editar(Funcionario geradorDeId, int id)
+    {
+      Funcionario funcionario = colaboradores.Find(x => x.Id == id);
+      funcionario.Nome = geradorDeId.Nome;
+      funcionario.Senha = geradorDeId.Senha;
+      funcionario.Salario = geradorDeId.Salario;
+      funcionario.Permissao = geradorDeId.Permissao;
+    }
+
+    public static void deletar(Funcionario geradorDeId)
+    {
+      colaboradores.Remove(geradorDeId);
+    }
 
   }
 
